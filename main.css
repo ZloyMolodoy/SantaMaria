@@ -58,16 +58,17 @@ button {
   position: relative;
   width: 100%;
   color: white;
+  height: 700px;
 }
 .promo-wrap {
   max-width: 85%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .promo-text {
-  padding-top: 120px;
   display: flex;
   flex-direction: column;
 }
@@ -86,7 +87,8 @@ button {
   font-weight: 600;
 }
 .promo-form {
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   padding: 20px 20px;
   width: 30%;
   display: flex;
@@ -105,10 +107,12 @@ button {
 .promo-form__subtitle {
   text-align: center;
   font-weight: 400;
+  margin-top: 20px;
 }
 .promo-form__item {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 .promo-form__item input {
   max-width: 100%;
@@ -118,6 +122,10 @@ button {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   padding-bottom: 2px;
+  font-weight: 500;
+  color: white;
+}
+.promo-form__item input::-moz-placeholder {
   font-weight: 500;
   color: white;
 }
@@ -155,7 +163,8 @@ button {
   border-radius: 20px;
   padding: 10px 0;
   border: none;
-  margin-top: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .line {
@@ -196,6 +205,8 @@ button {
 }
 .parents__lines {
   position: absolute;
+  width: 99.9%;
+  height: 66.2%;
 }
 
 .infra {
@@ -308,6 +319,7 @@ button {
   padding: 10px;
   color: white;
   background-color: #11779A;
+  border-radius: 0px 0px 10px 10px;
   display: flex;
   flex-direction: column;
 }
@@ -323,4 +335,58 @@ button {
   border-radius: 20px;
 }
 
-/*# sourceMappingURL=main.css.map */
+.footer {
+  background-color: #11779A;
+  width: 100%;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.footer-info__title {
+  font-size: 36px;
+  font-weight: 700;
+}
+.footer-info__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.footer-info__name {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 35px;
+}
+.footer-info__link {
+  color: #A6C8FB;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.footer-items {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-items > span {
+  font-weight: 600;
+  font-size: 20px;
+}
+.footer-items > a {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.footer-items__social {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+.footer-content {
+  display: flex;
+  padding: 80px 0 120px 0;
+  gap: 130px;
+}/*# sourceMappingURL=main.css.map */
