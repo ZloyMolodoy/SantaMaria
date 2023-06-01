@@ -506,7 +506,74 @@ button {
   }
   .footer {
     &-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    &-info {
+      text-align: center;
+      &__name {
+        margin-top: 10px;
+      }
+    }
+    &-items {
+      &__social {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  .header {
+    &-right {
       gap: 20px;
+    }
+  }
+  .promo {
+    &-wrap {
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &-text {
+      text-align: center;
+      &__street {
+        margin-top: 10px;
+      }
+    }
+    &-form {
+      width: 100%;
+    }
+  }
+  .footer {
+    &-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-info {
+      text-align: center;
+      &__name {
+        margin-top: 10px;
+      }
+    }
+    &-items {
+      &__social {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    &-content {
+      &__title {
+        font-size: 20px;
+      }
+    }
+    &-right {
+      & a {
+        font-size: 9px;
+      }
     }
   }
 }
